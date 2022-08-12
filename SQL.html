@@ -1,0 +1,48 @@
+// CREATE TABLE + nome, cria uma tabela.
+// INTEGER = números inteiros, positivo ou negativos.
+// TEXT = uma string.
+// DATE = a data em ANO-MES-DIA (YYYY-MM-DD)
+// REAL = valor decimal.
+CREATE TABLE groceries (
+   id INTEGER PRIMARY KEY,
+   name TEXT,
+   quantity INTEGER
+);
+
+// SELECT + * ou nome específico, seleciona quais dados desejamos marcar para um comando.
+// FROM indica de onde queremos os dados.
+SELECT * FROM estudantes; ( irá selecionar tudo da tabela estudantes )
+
+// INSERT INTO insere dados na tabela informada.
+// VALUES inserimos estes dados entre parenteses.
+INSERT INTO estudantes (id, name, age) 
+VALUES (1, 'Lorenzo Souza', 90);
+
+// ALTER TABLE permite alterar os dados de uma tabela, ALTER TABLE + nome da tabela.
+ALTER TABLE estudantes 
+// ADD COLUMN ou ADD ROW adiciona uma coluna ou linha respectivamente na tabela.
+ADD COLUMN twitter_handle TEXT; 
+ADD ROW twitter_handle TEXT; 
+
+// UPDATE atualiza uma tabela existente.
+// SET indica o que desejamos adicionar.
+// WHERE indica onde desejamos adicionar este dado.
+UPDATE estudantes 
+SET twitter_handle = '@lorenzotsouza' 
+WHERE id = 4; 
+
+// DELETE FROM = deleta o conteúdo do local escolhido.
+// IS NULL = retorna verdadeiro quando o valor não existe (NULL), do contrário, retorna falso.
+DELETE FROM estudantes 
+WHERE twitter_handle IS NULL;
+
+// PRIMARY KEY = tornam a linha única e exclusiva.
+// UNIQUE = 
+
+
+CREATE TABLE celebs (
+   id INTEGER PRIMARY KEY, 
+   name TEXT UNIQUE,
+   date_of_birth TEXT NOT NULL,
+   date_of_death TEXT DEFAULT 'Not Applicable'
+);
