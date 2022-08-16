@@ -21,7 +21,7 @@ def consultarProdutos():
   while True:
     try:
       print ('Você selecionou a opção de consultar produtos.')
-      opConsultar = int ( input ('Digite a opção desejada:\n1- Consultar todas os produtos\n2- Consultar produtos por código\n3- Consultar produtos por fabricante\n4- Retornar\n->'))
+      opConsultar = int ( input ('Digite a opção desejada:\n1- Consultar todos os produtos\n2- Consultar produtos por código\n3- Consultar produtos por fabricante\n4- Retornar\n->'))
       if opConsultar == 1:
         print ('-' * 20)
         for produtos in listaProdutos:
