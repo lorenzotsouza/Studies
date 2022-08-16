@@ -5,16 +5,16 @@ def volumeFeijoada():
     while True:
       print("Menu volume de feijoada")
       try:
-        volumeF = int ( input ('Digite o volume (em ml) que deseja de feijoada: ') )
-        if 300 <= volumeF <= 5000:
-          return volumeF * 0.08
+        volume = int ( input ('Digite o volume (em ml) que deseja de feijoada: ') )
+        if 300 <= volume <= 5000:
+          return volume * 0.08
         else:
             print('Não aceitamos porções menor que 300 ml e maior que 5000 ml \nDigite novamente uma quantidade válida.')
             continue
       except:
         print('Você digitou o volume com valor não numérico \nPor favor, digite novamente.')
         continue
-# fim da def volumeFeijoada.
+#fim da def volumeFeijoada.
 
 #início da def opcaoFeijoada.
 def opcaoFeijoada():
@@ -34,7 +34,7 @@ def opcaoFeijoada():
      except:
        print('Você digitou uma opção que não existe. \nPor favor, digite novamente.')
        continue
-# fim da def opcaoFeijoada.
+#fim da def opcaoFeijoada.
 
 #início da def acompanhamentoFeijoada.
 def acompanhamentoFeijoada():
@@ -58,12 +58,12 @@ def acompanhamentoFeijoada():
      except:
        print('Você digitou um acompanhamento que não existe.\nPor favor, digite novamente.')
        continue
-# fim da def acompanhamentoFeijoada.
+#fim da def acompanhamentoFeijoada.
 
 #cálculo final.
-v = volumeFeijoada()
-o = opcaoFeijoada()
-a = acompanhamentoFeijoada()
-total = (v * o * a);
+volume = volumeFeijoada()
+opcao = opcaoFeijoada()
+acompanhamento = acompanhamentoFeijoada()
+total = (volume*opcao+acompanhamento);
 
 print('O total a pagar é de: R$ {:.2f}'.format(total))

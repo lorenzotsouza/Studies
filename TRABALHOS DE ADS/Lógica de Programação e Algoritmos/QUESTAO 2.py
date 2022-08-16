@@ -1,23 +1,19 @@
 print ('Bem vindo a pizzaria do Lorenzo Teixeira de Souza RU:3959991\n')
 
 #cardápio.
-print ('**************Cardápio**************\n')
+print ('                           Cardápio\n')
 
-print ("|Cod| |  Sabor       |  |   Valor  |")
+print ("|  Cod  | |      Sabor      |  |           Valor por tamanho            |")
 
-print ("| 1 | |  Queijo      |  |  R$1,00  |")
+print ("|  21   | |    Napolitana   |  |  Média - R$ 20,00 / Grande - R$ 26,00  |")
 
-print ("| 2 | |  Carne       |  |  R$10,00 |")
+print ("|  22   | |    Margherita   |  |  Média - R$ 20,00 / Grande - R$ 26,00  |")
+ 
+print ("|  23   | |    Calabresa    |  |  Média - R$ 25,00 / Grande - R$ 32,50  |")
 
-print ("| 3 | |  Calabresa   |  |  R$8,00  |")
+print ("|  24   | |    Toscana      |  |  Média - R$ 30,00 / Grande - R$ 39,00  |")
 
-print ("| 4 | |  Presunto    |  |  R$6,00  |")
-
-print ("| 5 | |  Milho       |  |  R$3,00  |")
-
-print ("| 6 | |  Chocolate   |  |  R$5,00  |")
-
-print ("| 7 | |  Morango     |  |  R$7,00  |")   
+print ("|  25   | |    Portuguesa   |  |  Média - R$ 30,00 / Grande - R$ 39,00  |")   
 
 valorTotal=0
 
@@ -28,47 +24,35 @@ while(opcao777==1):
    codigo = int ( input ('\nDigite o número do sabor escolhido: '))  
 
 #sempre que for escolhido mais um sabor, o valor total irá aumentando.
-   if codigo == 1:
+   if codigo == 21:
 
-       valorTotal += 1
+       valorTotal += 20
 
-       print ('Você pediu uma Pizza sabor Queijo, o valor fica R$1,00')
+       print ('Você pediu uma Pizza sabor Napolitana.')
 
-   elif codigo == 2:
+   elif codigo == 22:
 
-       valorTotal += 10
+       valorTotal += 20
 
-       print ('Você pediu uma Pizza sabor Carne, o valor fica R$10,00')
+       print ('Você pediu uma Pizza sabor Margherita.')
 
-   elif codigo == 3:
+   elif codigo == 23:
 
-       valorTotal += 8
+       valorTotal += 25
 
-       print ('Você pediu uma Pizza sabor Calabresa, o valor fica R$8,00')
+       print ('Você pediu uma Pizza sabor Calabresa.')
 
-   elif codigo == 4:
+   elif codigo == 24:
 
-       valorTotal += 6
+       valorTotal += 30
 
-       print ('Você pediu uma Pizza sabor Presunto, o valor fica R$6,00')
+       print ('Você pediu uma Pizza sabor Toscana.')
 
-   elif codigo == 5:
+   elif codigo == 25:
 
-       valorTotal += 3
+       valorTotal += 30
 
-       print ('Você pediu uma Pizza sabor Milho, o valor fica R$3,00')
-
-   elif codigo == 6:
-
-       valorTotal+=5
-
-       print ('Você pediu uma Pizza sabor Chocolate, o valor fica R$5,00')
-
-   elif codigo == 7:
-
-       valorTotal+=7
-
-       print ('Você pediu uma Pizza sabor Morango, o valor fica R$7,00')
+       print ('Você pediu uma Pizza sabor Portuguesa.')
 
    else:
 

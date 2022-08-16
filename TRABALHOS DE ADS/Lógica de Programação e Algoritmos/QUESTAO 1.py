@@ -4,21 +4,21 @@ valororiginal = float (input ('Digite o valor do produto: R$ '))
 
 quantidade = int (input ('Digite a quantidade do produto: '))
 
-if 0 <= quantidade < 10:
+if 0 <= quantidade <= 4:
 
     desconto = 0
 
-elif 10 <= quantidade < 100:
+elif 5 <= quantidade <= 19:
 
-    desconto = 0.7
+    desconto = 0.03
 
-elif 100 <= quantidade < 1000:
+elif 20 <= quantidade <= 99:
 
-     desconto = 0.70
+    desconto = 0.06
 
 else:
 
-   desconto = 0.25
+    desconto = 0.10
 
 #cálculo final.
 semdesconto = valororiginal * quantidade
