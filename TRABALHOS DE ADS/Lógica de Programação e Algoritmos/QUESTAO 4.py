@@ -1,9 +1,10 @@
 print ('Bem vindo a loja do Lorenzo Teixeira de Souza RU:3959991\n')
 
-#poderia ser adicionado uma opção que mostra uma lista com as peças já cadastradas.
+#poderia ser adicionado uma opção que mostra uma lista com as peças já cadastradas, sem precisar digitar algo para buscar.
+
 listaPecas = []
 
-#cadastrar peça.
+#início da def cadastrarPeca.
 def cadastrarPeca(codigo):
   print ('Você selecionou a opção de cadastrar peça.')
   print ('O código da peça é: {:0>3}'.format(codigo))
@@ -11,12 +12,13 @@ def cadastrarPeca(codigo):
   fabricante = input ('Digite o fabricante da peça: ')
   valor = float ( input ('Digite o valor R$ da peça: '))
   dicionarioPecas = {'codigo'   : codigo,
-                         'nome' : nome,
-                         'fabricante': fabricante,
-                         'valor': valor}
+                     'nome' : nome,
+                     'fabricante': fabricante,
+                     'valor': valor}
   listaPecas.append(dicionarioPecas.copy())
-
-#consultar peça.
+#fim da def cadastrarPeca.
+  
+#início da def ConsultarPeca.
 def consultarPeca():
   while True:
     try:
@@ -54,8 +56,9 @@ def consultarPeca():
     except ValueError:
       print ('Por favor, digite um número válido.')
       continue
-
-#remover peça.
+#fim da def ConsultarPeca.
+      
+#início da def RemoverPeca.
 def removerPeca():
     print ('Você selecionou o remover peça.')
     entrada = int ( input ('Digite o código da peça que deseja remover: '))
@@ -83,3 +86,4 @@ while True:
         continue
     except ValueError:
         print ('Por favor, digite um número válido.')
+#fim da def RemoverPeca.

@@ -20,6 +20,7 @@ else:
 
    desconto = 0.25
 
+#cálculo final.
 semdesconto = valororiginal * quantidade
 
 comdesconto = semdesconto - semdesconto * desconto
