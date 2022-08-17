@@ -94,3 +94,23 @@ CREATE TABLE enderecos (
    pessoa_id INT NOT NULL,
    FOREIGN KEY (pessoa_id) REFERENCES pessoas(id)
 );
+
+INSERT INTO enderecos (rua, numero, pessoa_id)
+VALUES ("Rua dos Amores", "1372", "1");
+
+INSERT INTO enderecos (rua, numero, pessoa_id)
+VALUES ("Rua dos Amores", "1375", "2");
+
+// INNER JOIN - trará todos resultados que tenha relação com o FROM informado.
+SELECT pessoas.nome, endereços.*
+FROM pessoas
+JOIN enderecos ON pessoas.id = enderecos.pessoas_id;
+// LEFT JOIN - trará todos os resultados que tenha relação com a tabela da esquerda.
+// RIGHT JOIN - trará todos os resultados que tenha relação com a tabela da direita.
+
+// Temos uma tabela com pessoas e seus salários e o analista
+// deseja analisar os salários dessas pessoas mas,
+// ele não entende de SQL e o nome da coluna/linha está estranho,
+// utilizamos o ALIAS(AS) na nossa função, assim o resultado fica com o nome desejado. exemplo:
+SELECT * FROM pessoas;
+SELECT SUM(soldo) AS soma_dos_salarios FROM pessoas;
