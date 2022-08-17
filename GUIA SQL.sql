@@ -1,13 +1,25 @@
+//CREATE DATABASE + nome, cria o banco de dados.
+CREATE DATABASE estudantes;
+
+//DROP DATABASE + nome, deleta o banco de dados.
+DROP DATABASE estudantes;
+
+//USE + nome, seleciona o banco de dados para receber os comandos.
+USE estudantes;
+
 // CREATE TABLE + nome, cria uma tabela.
 // INTEGER = números inteiros, positivo ou negativos.
 // TEXT = uma string.
 // DATE = a data em ANO-MES-DIA (YYYY-MM-DD)
 // REAL = valor decimal.
-CREATE TABLE groceries (
+CREATE TABLE estudantes (
    id INTEGER PRIMARY KEY,
-   name TEXT,
-   quantity INTEGER
+   nome TEXT,
+   quantidade INTEGER
 );
+
+//VARCHAR() permite apenas a quantidade de caracteres informados dentro do parenteses.
+//nome VARCHAR(15);
 
 // SELECT + * ou nome específico, seleciona quais dados desejamos marcar para um comando.
 // FROM indica de onde queremos os dados.
@@ -15,7 +27,7 @@ SELECT * FROM estudantes; ( irá selecionar tudo da tabela estudantes )
 
 // INSERT INTO insere dados na tabela informada.
 // VALUES inserimos estes dados entre parenteses.
-INSERT INTO estudantes VALUES (id, name, age) 
+INSERT INTO estudantes VALUES (id, nome, idade) 
 (1, 'Lorenzo Souza', 90);
 
 // ALTER TABLE permite alterar os dados de uma tabela, ALTER TABLE + nome da tabela.
@@ -69,5 +81,3 @@ INSERT INTO country VALUES("E", "USA");
 // Selecionamos tudo e ordenamos por preço, do mais caro para o mais barato.
 SELECT * FROM shoes
 ORDER BY price DESC;
-SELECT * FROM country;
-SELECT * FROM shoes;
