@@ -48,7 +48,8 @@ SET twitter_handle = '@lorenzotsouza'
 WHERE id = 4; 
 
 // DELETE FROM = deleta o conteúdo do local escolhido.
-// IS NULL = retorna verdadeiro quando o valor não existe (NULL), do contrário, retorna falso.
+// NOT NULL = retorna verdadeiro se não estiver em branco. 
+// IS NULL = retorna verdadeiro se estiver em branco.
 DELETE FROM estudantes 
 WHERE twitter_handle IS NULL;
 
@@ -111,6 +112,31 @@ JOIN enderecos ON pessoas.id = enderecos.pessoas_id;
 // Temos uma tabela com pessoas e seus salários e o analista
 // deseja analisar os salários dessas pessoas mas,
 // ele não entende de SQL e o nome da coluna/linha está estranho,
-// utilizamos o ALIAS(AS) na nossa função, assim o resultado fica com o nome desejado. exemplo:
+// utilizamos o ALIAS(AS) na nossa função, assim o resultado fica com o nome desejado.
 SELECT * FROM pessoas;
 SELECT SUM(soldo) AS soma_dos_salarios FROM pessoas;
+
+// Para contar quantas ocorrências temos na coluna
+// utilizamos a função COUNT.
+SELECT COUNT(*) FROM pessoas;
+// Irá nos retornar quantas pessoas temos.
+// Podemos personalizar o retorno com outro nome.
+SELECT COUNT(*) AS quantidade_pessoas FROM pessoas;
+// Desejamos fazer uma pesquisa mais específica, queremos somente as pessoas que são devs.
+SELECT COUNT(*) AS quantidade_devs FROM pessoas
+WHERE profissao = "Dev";
+// Irá nos retornar somente os devs.
+
+// GROUP BY = serve para agrupar os dados por coluna.
+SELECT profissao, COUNT(*) AS quatidade_por_profissao FROM pessoas
+GROUP BY profissao;
+
+// CONCAT = serve para concatenar textos com informações da tabela.
+SELECT CONCAT("O nome da pessoa é: ", nome, ", e ele ganha: R$ ", salario) AS descricao
+FROM pessoas;
+
+SELECT YEAR(data_nascimento) AS ano_de_nascimento,
+MONTH(data_nascimento) AS mes_de_nascimento,
+DAY(data_nascimento) AS dia_de_nascimento
+FROM pessoas;
+// Nos retornará o ano, mês e dia de nascimento das pessoas na tabela.
