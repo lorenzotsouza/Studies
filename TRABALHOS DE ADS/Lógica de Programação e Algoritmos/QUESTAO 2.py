@@ -1,6 +1,6 @@
 print ('Bem vindo a pizzaria do Lorenzo Teixeira de Souza RU:3959991\n')
 
-#cardápio.
+# Cardápio.
 print ('                           Cardápio\n')
 
 print ("|  Cod  | |      Sabor      |  |           Valor por tamanho            |")
@@ -23,7 +23,7 @@ while(opcao777==1):
 
    codigo = int ( input ('\nDigite o número do sabor escolhido: '))  
 
-#sempre que for escolhido mais um sabor, o valor total irá aumentando.
+# Sempre que for escolhido mais um sabor, o valor total irá aumentando.
    if codigo == 21:
 
        valorTotal += 20
@@ -62,5 +62,5 @@ while(opcao777==1):
 
    opcao777 = int (input ('Deseja fazer um novo pedido?\n1 - SIM\n0 - NÃO\n'))
 
-#cálculo final.  
+# Cálculo final.  
 print ('O total a ser pago é: R$ {:.2f}'.format(valorTotal))

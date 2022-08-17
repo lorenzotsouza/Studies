@@ -2,7 +2,7 @@ print ('Bem vindo a loja do Lorenzo Teixeira de Souza RU:3959991\n')
 
 listaProdutos = []
 
-#início da def cadastrarProduto.
+# Início da def cadastrarProduto.
 def cadastrarProduto(codigo):
   print ('Você selecionou a opção de cadastrar produto.')
   print ('O código do produto é: {:0>3}'.format(codigo))
@@ -14,9 +14,9 @@ def cadastrarProduto(codigo):
                      'fabricante': fabricante,
                      'valor': valor}
   listaProdutos.append(dicionarioProdutos.copy())
-#fim da def cadastrarProduto.
+# Fim da def cadastrarProduto.
   
-#início da def consultarProduto.
+# Início da def consultarProduto.
 def consultarProdutos():
   while True:
     try:
@@ -54,9 +54,9 @@ def consultarProdutos():
     except ValueError:
       print ('Por favor, digite um número válido.')
       continue
-#fim da def consultarProduto.
+# Fim da def consultarProduto.
       
-#início da def removerProduto.
+# Início da def removerProduto.
 def removerProduto():
     print ('Você selecionou o remover produto.')
     entrada = int ( input ('Digite o código do produto que deseja remover: '))
@@ -84,4 +84,4 @@ while True:
         continue
     except ValueError:
         print ('Por favor, digite um número válido.')
-#fim da def removerProduto.
+# Fim da def removerProduto.

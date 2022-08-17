@@ -20,12 +20,12 @@ else:
 
     desconto = 0.10
 
-#cálculo final.
+# Cálculo final.
 semdesconto = valororiginal * quantidade
 
 comdesconto = semdesconto - semdesconto * desconto
 
-#o valor com desconto não está aparecendo o desconto ao lado, para a pessoa ver quanto economizou.
+# O valor com desconto não está aparecendo o desconto ao lado, para a pessoa ver quanto economizou.
 print (' O valor sem desconto fica R$ {:.2f}'.format(semdesconto))
 
 print (' O valor com desconto fica R$ {:.2f}'.format(comdesconto, desconto))

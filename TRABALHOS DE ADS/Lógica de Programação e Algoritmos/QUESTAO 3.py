@@ -1,6 +1,6 @@
 print('Bem vindo ao restaurante do Lorenzo Teixeira de Souza RU:3959991\n')
 
-#início da def volumeFeijoada.
+# Início da def volumeFeijoada.
 def volumeFeijoada():
     while True:
       print("Menu volume de feijoada")
@@ -14,9 +14,9 @@ def volumeFeijoada():
       except:
         print('Você digitou o volume com valor não numérico \nPor favor, digite novamente.')
         continue
-#fim da def volumeFeijoada.
+# Fim da def volumeFeijoada.
 
-#início da def opcaoFeijoada.
+# Início da def opcaoFeijoada.
 def opcaoFeijoada():
     while True:
      print("Menu opcao de feijoada")
@@ -34,9 +34,9 @@ def opcaoFeijoada():
      except:
        print('Você digitou uma opção que não existe. \nPor favor, digite novamente.')
        continue
-#fim da def opcaoFeijoada.
+# Fim da def opcaoFeijoada.
 
-#início da def acompanhamentoFeijoada.
+# Início da def acompanhamentoFeijoada.
 def acompanhamentoFeijoada():
     while True:
      print("Menu acompanhamento da feijoada")
@@ -58,9 +58,9 @@ def acompanhamentoFeijoada():
      except:
        print('Você digitou um acompanhamento que não existe.\nPor favor, digite novamente.')
        continue
-#fim da def acompanhamentoFeijoada.
+# Fim da def acompanhamentoFeijoada.
 
-#cálculo final.
+# Cálculo final.
 volume = volumeFeijoada()
 opcao = opcaoFeijoada()
 acompanhamento = acompanhamentoFeijoada()

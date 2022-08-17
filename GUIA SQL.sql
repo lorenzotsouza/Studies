@@ -1,11 +1,11 @@
-//CREATE DATABASE + nome, cria o banco de dados.
-CREATE DATABASE estudantes;
+// CREATE DATABASE + nome, cria o banco de dados.
+CREATE DATABASE escola;
 
-//DROP DATABASE + nome, deleta o banco de dados.
-DROP DATABASE estudantes;
+// DROP DATABASE + nome, deleta o banco de dados.
+DROP DATABASE escola;
 
-//USE + nome, seleciona o banco de dados para receber os comandos.
-USE estudantes;
+// USE + nome, seleciona o banco de dados para receber os comandos.
+USE escola;
 
 // CREATE TABLE + nome, cria uma tabela.
 // INTEGER = números inteiros, positivo ou negativos.
@@ -18,7 +18,7 @@ CREATE TABLE estudantes (
    quantidade INTEGER
 );
 
-//VARCHAR() permite apenas a quantidade de caracteres informados dentro do parenteses.
+// VARCHAR() permite apenas a quantidade de caracteres informados dentro do parenteses.
 //nome VARCHAR(15);
 
 // SELECT + * ou nome específico, seleciona quais dados desejamos marcar para um comando.
@@ -35,6 +35,10 @@ ALTER TABLE estudantes
 // ADD COLUMN ou ADD ROW adiciona uma coluna ou linha respectivamente na tabela.
 ADD COLUMN twitter_handle TEXT; 
 ADD ROW twitter_handle TEXT; 
+ALTER TABLE estudantes ADD COLUMN profissao VARCHAR(50);
+
+// Permite que colunas sejam atualizadas com excessão das que possuem chave primária.
+SET SQL_SAFE_UPDATES = 0;
 
 // UPDATE atualiza uma tabela existente.
 // SET indica o que desejamos adicionar.
@@ -81,3 +85,12 @@ INSERT INTO country VALUES("E", "USA");
 // Selecionamos tudo e ordenamos por preço, do mais caro para o mais barato.
 SELECT * FROM shoes
 ORDER BY price DESC;
+
+// Tabela para adicionar endereços.
+CREATE TABLE enderecos (
+   id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+   rua VARCHAR(100),
+   numero VARCHAR(5),
+   pessoa_id INT NOT NULL,
+   FOREIGN KEY (pessoa_id) REFERENCES pessoas(id)
+);
