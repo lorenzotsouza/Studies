@@ -10,7 +10,7 @@ $ aws
 Verifique se o executável está correto. agora digite:
 $ aws configure
 Irá solicitar a access key e sua secret access key.
-Irá lhe perguntar o nome padrão da sua região. [ sa-east-1 (são paulo) ]
+Irá lhe perguntar o nomespeech_br padrão da sua região. [ sa-east-1 (são paulo) ]
 Formato padrão: json
 Agora digite:
 $ aws iam list-users
