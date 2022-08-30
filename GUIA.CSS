@@ -32,4 +32,10 @@ h1 {
 // CSS como arquivo próprio deve ser linkado no arquivo HTML com a seguinte linha:
 <link rel="stylesheet" href="style.css">
 
-// 
+// Em questão de força da tag do CSS sobre o HTML, a seguinte ordem se aplica:
+1. Inline = <h1 style="color: red"> Cor </h1>.
+2. Interno = A tag style acima do arquivo com as edições visuais.
+3. Externo = O arquivo CSS.
+
+// Em questão de força no arquivo externo de CSS, a seguinte ordem se aplica:
+1. 
