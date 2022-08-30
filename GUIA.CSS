@@ -1,0 +1,35 @@
+// No css o comentário é da seguinte forma:
+/* aqui dentro está comentado */
+
+// Para selecionarmos o id utilizamos # antes do nome no CSS.
+#topo = irá selecionar o id topo no arquivo HTML.
+
+// Para selecionarmos a classe utilizamos . antes do nome no CSS.
+.base = irá selecionar a classe base no arquivo HTML
+
+// Para selecionarmos todo o arquivo HTML, utilizamos *.
+
+// Para selecionar uma propriedade comum, somente utilizamos o nome.
+h1 {
+    aqui dentro irá a alteração visual do bloco h1.
+}
+
+// Para agrupar propriedades utilizamos a vírgula.
+h1, h2, h3 {
+    aqui dentro irá a alteração visual das propriedades selecionadas.
+}
+
+// CSS inline é o CSS colocado direto no arquivo HTML.
+<h1 style="color: blue"> aqui ficou azul </h1>
+// Também pode ser criado uma tag style dentro do HTML.
+<style> 
+h1 {
+    color: blue;
+}
+</style>
+// Tudo dentro do h1 ficará azul.
+
+// CSS como arquivo próprio deve ser linkado no arquivo HTML com a seguinte linha:
+<link rel="stylesheet" href="style.css">
+
+// 
