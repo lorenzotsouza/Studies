@@ -125,4 +125,8 @@ ocupa toda a linha, o próximo elemento vem abaixo | elemento fica ao lado do ou
 width e height são respeitados                    | width e height não funcionam
 padding, margin e border funcionam normalmente    | somente valores horizontais de padding, margin e border
 
+// Margens.
+margin - podem ser utilizadas margens em em px, top, left, bottom, right e auto.
+a ordem no código é top, laterais, bottom.
+
 // 
