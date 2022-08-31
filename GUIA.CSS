@@ -45,10 +45,84 @@ h1 {
 5. Universal = *
 
 // At-rules, são comportamentos no arquivo CSS, exemplo:
+/*
 @import - incluir CSS externo.
 @media - regras para dispositivos móveis.
 @font-face - fontes externas.
 @keyframes - animações.
+*/
 
 // Shorthand é a uma forma de organizar a edição visual de um modo que fique,
 // melhor de ser visualizado e menos poluído. Exemplo:
+Código normal de um background:
+/*
+background-color: #000;
+background-image: url(images/image.png);
+background-repeat: no-repeat;
+background-position: left-top;
+*/
+Código shorthand:
+/*
+background: #000 url(images/image.png) no-repeat left-top;
+*/
+Código normal de uma fonte:
+/*
+font-style: italic;
+font-weight: bold;
+font-size: 10px;
+line-height: 1.3;
+font-family: Arial, sans-serif;
+*/
+Código shorthand:
+/*
+font: italic bold 10px/1.3 Arial, sans-serif;
+*/
+
+// Tipos numéricos:
+<integer> = Números inteiros, -10 ou 300.
+<number> = Número decimal, 2.4, 64 ou 0.234.
+<dimension> = Números com unidades juntos, 90deg, 2s ou 8px.
+<porcentagem> = Representa uma fração: 50%.
+// Unidades comuns:
+<length> = Representa um valor de distância: px, em, vw.
+<angle> = Representa um ângulo: deg, rad, turn.
+<time> = Representa um tempo: s, ms.
+<resolution> = Representa resoluções para os dispositivos: dpi.
+
+// Distâncias absolutas:
+Unidade     Nome                Equivalência
+cm          Centímetros         1cm = 96px = 2.54
+in          Inches(polegadas)   1in = 2.54 = 96px
+px          Pixels              1px = 1/96th of 1in
+
+// Distâncias relativas:
+Unidade     Relativo a
+em          Tamanho da font do pai.
+rem         Tamanho da font do elemento raiz (root/html).
+vw          1% da viewport width.
+vh          1% da viewport height.
+
+// Inserir string no CSS:
+.box::after {
+    content: "Aqui será inserido texto";
+    color: white;
+}
+
+// Box model.
+Tamanho (largura x altura) - width | height
+Conteúdo - content
+Bordas - border
+Preenchimento interno - padding
+Espaços fora da caixa - margin
+
+// Box sizing.
+content-box                    | border-box
+A caixa é medida pelo conteúdo | A caixa é medida pelas bordas.
+
+// Display block ou inline.
+Block                                             | Inline
+ocupa toda a linha, o próximo elemento vem abaixo | elemento fica ao lado do outro
+width e height são respeitados                    | width e height não funcionam
+padding, margin e border funcionam normalmente    | somente valores horizontais de padding, margin e border
+
+// 
