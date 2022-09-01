@@ -126,7 +126,34 @@ width e height são respeitados                    | width e height não funcion
 padding, margin e border funcionam normalmente    | somente valores horizontais de padding, margin e border
 
 // Margens.
-margin - podem ser utilizadas margens em em px, top, left, bottom, right e auto.
-a ordem no código é top, laterais, bottom.
+margin - podem ser utilizadas medidas de px, em, %, top, left, bottom, right e auto.
+a ordem no código é top, left+right, bottom.
+
+// Preenchimento.
+padding - podem ser utilizados medidas de px, em, %, top, left, bottom, right e auto.
+a ordem no código é top, left+right, bottom.
+cuidado ao mexer no padding, ele pode alterar a largura do desenho.
+
+// Bordas.
+border (e outline) - controla as bordas das box criadas, podem ser utilizadas medidas de:
+px, em, %, top, left, bottom, right e auto.
+o style da borda pode ser: solid | dotted | dashed | double | groove | ridge | inset | outset
+
+// Cores.
+as cores podem ser inseridas com o nome (inglês), valor hexadecimal, RGB(A) e HSL(A). Exemplo:
+/*h1 {
+    color: blue;
+    color: #0000FF;
+    color: rgb(0, 0, 255);
+    color: hsl(240, 100%, 50%);
+}*/
+podemos adicionar transparência no RGB(A) e no HSL(A), com uma quarta casa em valor decimal ou porcento.
+
+// Valores globais para referência.
+/*h1 {
+    color: inherit; - irá herdar a cor do elemento anterior.
+    color: initial; - volta a cor inicial.
+    color: unset; - não há cor definida.
+}*/
 
 // 
