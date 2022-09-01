@@ -1,6 +1,9 @@
 // Este é o tipo de arquivo.
 <!DOCTYPE html>
 
+// Como comentar:
+<!-- aqui dentro está o comentário sobre o código -->
+
 // Tudo dentro dessas duas tags <html> será interpretado como HTML.
 <html> </html>
 
@@ -156,4 +159,65 @@ href com o link antes <cite> nome que aparecerá no site ao invés do link </cit
     </tfoot>
 </table>
 
-// 
+// Vídeo.
+<video controls 
+    width="400"
+    height="400"
+    autoplay - tocar o video sozinho.
+    preload="auto" OU "metadata" OU "none" - automático/só os dados necessários/nada.
+    loop - tocará novamente quando terminar.
+    muted - começa o vídeo sem som.
+    poster="imagem.png" - coloca uma imagem no vídeo até ele começar.
+>
+    <source src="video.aqui"
+    type="video/mp4"> <!-- mp4 é o formato, pode ser qualquer outro -->
+<p>Este browser não suporta este vídeo, baixe-o aqui.</p>
+</video>
+
+// Audio.
+<audio controls 
+    autoplay - tocar o audio sozinho.
+    preload="auto" OU "metadata" OU "none" - automático/só os dados necessários/nada.
+    loop - tocará novamente quando terminar.
+    muted - começa o audio sem som.
+>
+    <source src="audio.aqui"
+    type="video/mp3"> <!-- mp3 é o formato, pode ser qualquer outro -->
+<p>Este browser não suporta este audio, baixe-o aqui.</p>
+</audio>
+
+// iFrame com exemplo de vídeo do YouTube.
+<iframe 
+    width="560"
+    height="315" 
+    src="https://www.youtube.com/embed/caracteres do video"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+    title="Título do vídeo">
+</iframe>
+
+// iFrame com exemplo de mapa.
+<iframe
+    src="https://www.google.com/maps/restante do link para o local"
+    width="600"
+    height="450"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+
+// Imagens.
+<a href="link para quando for clicado na imagem">
+    <figure>
+        <img
+        src="https://source.unsplash.com/imagem qualquer" 
+        alt="texto para quando a imagem não carrega"
+        title="colocar título na imagem para quando o mouse fica parado nela"]
+        width="100px"
+        height="100px"
+        >
+        <figcaption>Titulo que estará sempre visível na imagem</figcaption>
+    </figure>
+</a>

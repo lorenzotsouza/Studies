@@ -141,7 +141,7 @@ o style da borda pode ser: solid | dotted | dashed | double | groove | ridge | i
 
 // Cores.
 as cores podem ser inseridas com o nome (inglês), valor hexadecimal, RGB(A) e HSL(A). Exemplo:
-/*h1 {
+/* h1 {
     color: blue;
     color: #0000FF;
     color: rgb(0, 0, 255);
@@ -150,10 +150,51 @@ as cores podem ser inseridas com o nome (inglês), valor hexadecimal, RGB(A) e H
 podemos adicionar transparência no RGB(A) e no HSL(A), com uma quarta casa em valor decimal ou porcento.
 
 // Valores globais para referência.
-/*h1 {
+/* h1 {
     color: inherit; - irá herdar a cor do elemento anterior.
     color: initial; - volta a cor inicial.
     color: unset; - não há cor definida.
 }*/
 
-// 
+// Background.
+/* h1 {
+    background-color: rgb(255, 100, 50);
+    background-image: url(https://.....);
+    background-repeat: repeat-x(y)/repeat/no-repeat/space/round;
+    background-position: center/left/right/top/bottom;
+    background-size: cover/contain; OU 2 valores de tamanho como: background-size: 40% auto;
+    background-origin: content-box/padding-box/border-box;
+    background-clip: content-box/padding-box/border-box/text;
+    background-attachment: fixed/scroll/local;
+}*/
+
+// Posicionando box.
+/* .box {
+    display: flex;
+    flex-direction: column | row;
+    justify-content: center;
+    position: static | relative | absolute | fixed;
+    z-index: 2;
+} */
+static: segue o fluxo normal, um abaixo do outro.
+relative: fica relativo ao valor do próximo comando. exemplo: left: 100px;
+absolute: este item ficará em uma "camada" maior, ele se torna mais importante que os outros.
+fixed: a caixa fica fixa na página.
+z-index: controla o nível de cada elemento, podendo fazer várias camadas.
+display flex + flex-direction: permite organizar em forma de coluna ou linha.
+justify-content: permite justificar as caixas na página.
+
+// Grid.
+/* body {
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+    "header header"
+    "main aside"
+    "footer footer";
+    grid-template-rows: 30px 1fr 40px;
+    grid-template-columns: 1fr 80px;
+}
+*/
+Exemplo de página em recortes/blocos, flexbox pode ser utilizado junto.
