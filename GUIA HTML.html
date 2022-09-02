@@ -223,3 +223,57 @@ href com o link antes <cite> nome que aparecerá no site ao invés do link </cit
 </a>
 
 // Formulários.
+<form id="contato" action="submit">
+    <button type="submit">Enviar</button>
+</form>
+<fieldset form="contato" name="inputs-contact">
+    <legend> Texto que irá explicar o que deve ser escrito </legend>
+    <label for="contato">Nome</label>
+    <input id="contato" type="text">
+</fieldset>
+button - type (submit, reset, button), autofocus, disabled, name, value e form.
+o button é estilizado pelo navegador.
+action - ação que o form/button fará ao ser clicado.
+label - só funciona com button, input (not hidden), meter, output, progress, select e textarea.
+
+// Datalist.
+<input 
+    type="text"
+    list="fruits"
+    placeholder="Escolha uma fruta"
+/>
+<datalist id="fruits">
+    <option>Maçã</option>
+    <option>Uva</option>
+    <option>Abacaxi</option>
+    <option>Morango</option>
+    <option>Pera</option>
+</datalist>
+Fará uma lista com opções para o usuário selecionar.
+Aceita text, search, url, tel, email, date, month, week, time, datetime-local, number, range e color.
+Não aceita, hidden, password, checkbox, radio, file ou qualquer button.
+
+// Input.
+autocomplete - completará baseado no histórico do navegador do usuário.
+autofocus - o cursor irá diretamente para a lacuna de preenchimento.
+disabled - desabilita o preenchimento.
+value - pode ser texto ou qualquer outro caracteres.
+readonly - somente leitura. (quase todos)
+form - faz o link do input com um formulário. (quase todos)
+name - permite uma melhor identificação dos dados.
+required - torna obrigatório o preenchimento. (quase todos)
+placeholder - similar ao label, porém, fica dentro da caixa de digitação. (quase todos) 
+
+* type="password"
+minlength="5" -mínimo de senha.
+maxlength="20" - máximo de senha.
+size="8" - quantidade obrigatória.
+pattern="0-9a-fA-F"{4,8}" - obriga o uso de caracteres de A-F e de 0-9. mínimo de 4 e máximo de 8.
+inputmode="numeric" - abrirá o teclado numérico no smartphone.
+
+* type="email"
+pattern=".+@A-Za-z\.com\.br"
+datalist id="lista" + list="lista" + options com emails de sugestão, permite que o navegador
+sugira emails de uma lista predefinida.
+
+* type="url"
