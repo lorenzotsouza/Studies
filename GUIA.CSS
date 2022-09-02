@@ -198,3 +198,36 @@ justify-content: permite justificar as caixas na página.
 }
 */
 Exemplo de página em recortes/blocos, flexbox pode ser utilizado junto.
+
+// Fontes.
+/* h1 {
+    font-family: "Times New Roman", sans-serif;
+    font-weight: normal/bold;
+    font-style: oblique/italic/normal;
+    font-size: 1.2em/5px;
+    font-variant: small-caps;
+    font-stretch: expanded/condensed/normal; também aceita porcentagens.
+    letter-spacing: 3px/3em;
+    word-spacing: 3px/3em;
+    line-height: 1.5;
+    text-transform: uppercase/capitalize/lowercase/none;
+    text-decoration: underline/overline/line-through/wavy/dashed/dotted/solid/qualquer cor em inglês;
+    text-align: center/right/left/justify;
+    text-shadow: 1px 2px 3px red; - posicionamento x / posicionamento y / blur/ cor
+} */
+font-family - é o tipo de fonte do elemento. se não tiver a primeira fonte a segunda é utilizada,
+se nenhuma tiver, alguma fonte sans-serif é colocada automaticamente.
+font-weight - peso da fonte.
+font-style - estilo da fonte.
+font-size - tamanho da fonte.
+font-variant - faz variações na fonte.
+font-stretch - alargamento ou encolhimento da fonte.
+letter-spacing: espaçamento entre letras.
+word-spacing: espaçamento entre palavras.
+line-height: espaçamento entre linhas.
+text-transform: transforma o texto.
+text-decoration: estiliza o texto.
+text-align: alinha o texto.
+text-shadow: sombrear o texto e colorir a sombra.
+
+// 
