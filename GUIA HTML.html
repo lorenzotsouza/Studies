@@ -223,7 +223,7 @@ href com o link antes <cite> nome que aparecerá no site ao invés do link </cit
 </a>
 
 // Formulários.
-<form id="contato" action="submit">
+<form id="contato" action="submit" method="post">
     <button type="submit">Enviar</button>
 </form>
 <fieldset form="contato" name="inputs-contact">
@@ -231,10 +231,14 @@ href com o link antes <cite> nome que aparecerá no site ao invés do link </cit
     <label for="contato">Nome</label>
     <input id="contato" type="text">
 </fieldset>
+id - identificador.
+for - copia o identificador.
 button - type (submit, reset, button), autofocus, disabled, name, value e form.
 o button é estilizado pelo navegador.
 action - ação que o form/button fará ao ser clicado.
 label - só funciona com button, input (not hidden), meter, output, progress, select e textarea.
+method = POST é ideal para formulários de login, cadastro e envio de arquivos.
+GET é ideal para qualquer outro formulário.
 
 // Datalist.
 <input 
@@ -271,9 +275,36 @@ size="8" - quantidade obrigatória.
 pattern="0-9a-fA-F"{4,8}" - obriga o uso de caracteres de A-F e de 0-9. mínimo de 4 e máximo de 8.
 inputmode="numeric" - abrirá o teclado numérico no smartphone.
 
-* type="email"
+* type="email"/"url"
 pattern=".+@A-Za-z\.com\.br"
-datalist id="lista" + list="lista" + options com emails de sugestão, permite que o navegador
+datalist id="lista" + list="lista" + options com emails/url de sugestão, permite que o navegador
 sugira emails de uma lista predefinida.
 
-* type="url"
+* type="file"
+accept=".doc" ou qualquer ".tipo de arquivo", permite aceitar somente este tipo de arquivo.
+podemos utilizar "image/*" para qualquer tipo de imagem, audio/* e video/*, também se aplica.
+multiple - permite envio de múltiplos arquivos.
+enctype="multipart/form-data" - somente para este tipo de form.
+
+* type="checkbox"
+caixas que podem ser marcadas.
+checked - deixa a caixa já marcada.
+
+* type="hidden"
+utilizado para sabermos alguns dados no backend, não aparece para o usuário, (aparece no devtools)
+é enviado junto com o formulário que o usuário preenche. 
+
+* type="radio"
+permite uma única escolha entre opções no formulário.
+
+* type="textarea"
+rows e cols - define o tamanho da textarea.
+wrap - quebra de linha automática, não permite passa o limite da caixa.
+
+* type="select"
+faz o usuário selecionar uma das opções no formulário.
+multiple(size) - permite selecionar mais de uma opção. (quantas opções ficam visíveis)
+optgroup - realiza o agrupamento de várias opções da mesma cadeia. Exemplo: Cores como título,
+seguido de várias cores para selecionar.
+
+* type="search"
