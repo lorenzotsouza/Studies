@@ -25,15 +25,27 @@ Undefined - indefinido.
 Null - nulo, não possui nada dentro.
 
 // Object.
-Objeto que possui propriedades(atributos) e funcionalidades(métodos).
+Objeto que possui propriedades(atributos) e funcionalidades(métodos)
+const person = {
+    name: 'Lorenzo',
+    age: 25,
+    weight: 75,
+    isAdmin: true
+}
+
+console.log(`${person.name} tem ${person.age} anos.`)
 
 // Array(Vetores).
 Um agrupamento de dados. exemplo:
-console.log([
-    "Lorenzo",
-    "Caderno",
-    "Caneta"
-])
+const animals = [
+    'Wolf',
+    'Parrot',
+    'Eagle'
+]
+
+console.log(animals) // mostrará todos.
+console.log(animals[2]) // mostrará eagle. (começa no 0 a contagem.)
+console.log(animals[length]) // mostrará quantos tem.
 
 // Var(variáveis). exemplo:
 <script>
@@ -75,5 +87,21 @@ Não posso: Números e espaços vazios.
 Ideal: Nomes que fazem sentido e expliquem a variável (em inglês).
 camelCase (sempre que trocar a palavra usar maiúscula) - checkIfNameExist.
 snake_case (sempre que trocar a palavra usar um underline) - check_if_name_exist.
+
+// Concatenando e Interpolando.
+<script>
+
+var name
+name = "Lorenzo"
+let age, isHuman
+age = 25
+isHuman = true
+
+//console.log(name, age, isHuman)
+//console.log('o Lorenzo tem 25 anos')
+//console.log('o ' + name + ' tem ' + age + ' anos.')
+//console.log(`o ${name} tem ${age} anos.`)
+
+</script>
 
 // .
