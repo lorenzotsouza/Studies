@@ -104,4 +104,4 @@ isHuman = true
 
 </script>
 
-// .
+// Prototype.
