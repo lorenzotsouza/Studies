@@ -104,4 +104,60 @@ isHuman = true
 
 </script>
 
-// Prototype.
+// Conversion.
+console.log(Number('5') + 2) // Number converte string em number.
+// Outras formas de conversão.
+let string = "123"
+console.log(Number(string))
+let number = 321
+console.log(String(number))
+
+// Contagem.
+let word = "parapeito"
+console.log(word.length)
+let number = 782738278327
+console.log(String(number).length)
+
+// Transformar número grande após ponto(vírgula) em somente 2 casas e trocar ponto por vírgula.
+let number = 325.32563245235
+console.log(number.toFixed(2).replace(".", ","))
+
+// Transformar minúscula em maiúscula e vice-versa.
+let word = "Programar é show!"
+console.log(word.toLowerCase()) OU console.log(word.toUpperCase())
+
+// Manipulando Strings e Arrays.
+let phrase = "Eu quero ser um desenvolvedor."
+let myArray = phrase.split(" ")
+let phraseWithUnderscore = myArray.join("_")
+console.log(phraseWithUnderscore.toUpperCase())
+
+///////////////////////////////////////////////////////////////////////////
+let techs = ["html", "css", "js"]
+techs.push("nodejs")
+techs.unshift("sql")
+techs.pop() // remove o último elemento.
+techs.shift() // remove o primeiro elemento.
+console.log(techs.slice(1, 3)) // primeiro argumento é posição inicial e o segundo é posição final.
+techs.splice(1, 2) // primeiro argumento é o index e o segundo argumento é quantos quer remover.
+let index = techs.indexOf('css')
+console.log(techs)
+
+// Array com construtor.
+let myArray = new Array('a', 'b', 'c')
+console.log(myArray)
+
+// Contar elementos de um Array.
+console.log([
+    "a",
+    {type: "array"},
+    function() {return "hello"}
+].length)
+
+// Transformar uma cadeira de caracteres em elementos de um array.
+let word = "dev"
+console.log(Array.from(word))
+
+// Verificar se o texto contém uma palavra específica.
+let phrase = "Eu quero ser um desenvolvedor."
+console.log(phrase.includes("Eu"))
