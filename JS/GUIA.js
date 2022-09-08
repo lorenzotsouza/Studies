@@ -161,3 +161,44 @@ console.log(Array.from(word))
 // Verificar se o texto contém uma palavra específica.
 let phrase = "Eu quero ser um desenvolvedor."
 console.log(phrase.includes("Eu"))
+
+// Expressões (expressions)
+Operadores:
+Binário - number + 1. operador fica entre dois valores.
+Unário - ++number. operador vem antes do valor.
+Ternário - true ? 'alo' : 'nada'. operador fica entre valores em formato boolean.
+
+New - permite a criação de um novo objeto.
+let name = new String('Lorenzo') // também pode ser new date, new number...
+
+Delete - permite deletar uma propriedade dentro de um objeto.
+const person ={
+    name: 'Lorenzo'
+}
+delete person.name
+
+Operadores Aritiméticos
+Multiplicação - (2 * 2)a
+Subtração - (2 - 2)
+Resto da divisão(remainder) - (2 % 2)
+Incremento - (++2)
+Decremento - (--2)
+Exponencial - (2 ** 2)
+
+Agrupar Expressões
+(2 + 3) * (5 / 2)
+("Alo," + " quem é?")
+
+Comparação
+let one = 1
+let two = 2
+console.log(one == 2) // igual - retorna false, por que não é igual a one.
+console.log(one != 2) // diferente = retorna verdadeiro, por que é diferente de one.
+console.log(one === 2) // estritamente igual - tanto o valor quando o tipo tem que ser o mesmo.
+console.log(one !== 2) // estritamente diferente - tanto o valor quanto o tipo tem que ser diferente.
+console.log(one < two) // um menor que dois.
+console.log(one > two) // um maior que dois.
+console.log(one <= two) // um menor ou igual a dois.
+console.log(one >= two) // um maior ou igual a dois.
+
+// 
