@@ -266,7 +266,7 @@ switch (expression) {
     break
 }
 
-exemplo com calculadora:
+Exemplo com calculadora:
 
 function calculate(number1, operator, number2) { // colocamos o operador entre os números.
     let result = 0;
@@ -290,4 +290,64 @@ function calculate(number1, operator, number2) { // colocamos o operador entre o
     }
 
     return result
+}
+
+// Throw
+
+function sayMyName(name = '') { // caso esteja vazio, ele dispara um erro.
+    if (name === '') {
+        throw 'Nome é obrigatório' // essa é a mensagem do erro.
+    }
+
+    console.log(name)
+}
+
+OU
+
+try {
+    sayMyName()
+} catch(e) { // captura o objeto com erro no throw para corrigirmos.
+    console.log(e)
+}
+
+console.log('após ao try/catch')
+
+// Estruturas de repetição
+for(let i = 0; i < 10; i++) { // repete enquanto o i for menor que 10.
+    console.log(i)
+}
+
+for(let i = 100; i > 0; i--) { // repete enquanto o i for maior que 10, até 100.
+    if(i === 50) { // quando o i for igual a 50 ele para com o break.
+        break; // podemos utilizar "continue" para seguir o loop até o final estipulado.
+    }
+    console.log(i)
+}
+
+While
+let i = 532543262462;
+while(i > 10 ){ // enquanto i for maior que 10, o while continua.
+    console.log(i)
+    i /= 35;
+}
+Utilizaremos while quando não soubermos o momento da parada.
+
+For ... of
+let name = 'Lorenzo'
+let names = ['Loh', 'Lozinho', 'Lozão']
+
+for(let name of names) { // para cada name dentro dos names, ele irá atribuir um elemento no lugar.
+    console.log(char)
+}
+
+For ... in
+let person = {
+    name: 'Lorenzo',
+    age: 25,
+    weight: 75
+}
+
+for(let property in person) { // para cada objeto no person ele criará uma propriedade.
+    console.log(property)
+    console.log(person[property])
 }
