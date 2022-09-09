@@ -201,4 +201,93 @@ console.log(one > two) // um maior que dois.
 console.log(one <= two) // um menor ou igual a dois.
 console.log(one >= two) // um maior ou igual a dois.
 
-// 
+Operadores Lógicos
+let pao = true
+let queijo = true
+console.log(pao && queijo) // mostrará verdadeiro, porque temos os dois.
+console.log(pao && presunto) // mostrará falso, porque só tem um deles.
+console.log(pao || presunto) // mostrará verdadeiro, porque tem um. falso se não tiver nenhum dos dois.
+console.log(!pao) // inverte o valor do objeto.
+
+Operador Condicional // retorna o valor top caso tenha os dois. se não tiver os dois retorna o ruim.
+let pao = true
+let queijo = true
+const niceBreakfast = pao && queijo ? 'Café top' : 'Café ruim' // pode ser || como operador também.
+console.log(niceBreakfast)
+
+let age = 16
+const canDrive = age >= 18 ? 'can drive' : "can't drive"
+console.log(canDrive)
+
+Operador de String
+Comparação - ('a' == 'a')
+Concatenação - ('a' + 'b' + 'c')
+
+// Type coersion
+Falsy - é quando o valor obrigatoriamente precisa ser booleano e não está.
+Truthy - é quando o valor obrigatoriamente precisa ser booleano e ele está.
+
+// If(se) e else(se não)
+let temperature = 36.9
+
+if(temperature >= 37.5) {
+    console.log('Febre')
+} else if(temperature < 37.5 && temperature >= 37) {
+    console.log('Atenção')
+} else {
+    console.log('Saudável')
+}
+
+ OU 
+
+let temperature = 36.9
+let highTemperature = temperature >= 37.5
+let mediumTemperature = temperature < 37.5 && temperature >= 37
+if(highTemperature) {
+    console.log('Febre')
+} else if(mediumTemperature) {
+    console.log('Atenção')
+} else {
+    console.log('Saudável')
+}
+
+// Switch
+let expression = ''
+
+switch (expression) {
+  case 'a': // confere se o valor da expressão é correto.
+    console.log('a')
+    break // para a execução do switch, apenas se verdadeiro.
+  case 'b':
+    console.log('b')
+    break 
+  default: // caso nenhum valor seja o correto, realizará a instrução dentro de si.
+    console.log('default')
+    break
+}
+
+exemplo com calculadora:
+
+function calculate(number1, operator, number2) { // colocamos o operador entre os números.
+    let result = 0;
+
+    switch (operator) { // colocamos uma modificação em cada operador.
+        case '+':
+            result = number1 + number2
+            break
+        case '-':
+            result = number1 - number2 
+            break
+        case '*':
+            result = number1 * number2
+            break
+        case '/':
+            result = number1 / number2 
+            break
+        default: // operador não existente.
+            console.log('não implementado')
+            break
+    }
+
+    return result
+}
