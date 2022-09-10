@@ -1,11 +1,13 @@
-// Crie um algoritmo que transforme as notas do sistema
-// numérico para sistema de notas em caracteres tipo A, B, C, D, E e F.
-// de 90 para cima - A
-// entre 80 - 89   - B
-// entre 70 - 79   - C
-// entre 60 - 69   - D
-// entre 59 - 50   - E
-// menor que 49    - F
+/*
+∞ Crie um algoritmo que transforme as notas do sistema ∞
+∞ numérico para sistema de notas em caracteres tipo A, B, C, D, E e F. ∞
+• de 90 para cima - A
+• entre 80 - 89   - B
+• entre 70 - 79   - C
+• entre 60 - 69   - D
+• entre 59 - 50   - E
+• menor que 49    - F
+*/
 
 function getScore() {
     let scoreA = score >= 90 && score <= 100
