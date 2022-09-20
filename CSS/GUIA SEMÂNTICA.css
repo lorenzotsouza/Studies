@@ -123,4 +123,72 @@ body > ul > li {
 	color: blue;
 }
 
-// 
+// Adjacent sibling combinator
+Identificado pelo sinal + entre dois seletores.
+Seleciona somente o elemento do lado direito que é irmão direto na hierarquia.
+
+EXEMPLO:
+<h1>
+  Título
+</h1>
+<p>
+  Esse é um parágrafo
+</p>
+<p>
+  Mais um parágrafo
+</p>
+
+h1 + p {
+	color: red;
+}
+
+// General sibling combinator
+Identificado pelo sinal ~ entre dois seletores.
+Seleciona todos os elementos irmãos.
+
+EXEMPLO:
+<h1>
+  Título
+</h1>
+<p>
+  Esse é um parágrafo
+</p>
+<p>
+  Mais um parágrafo
+</p>
+
+h1 ~ p {
+	color: red;
+}
+
+// Pseudo-classes
+É um tipo de seletor que irá selecionar um elemento que estiver em um estado específico.
+
+// First-child
+É quando queremos selecionar o primeiro filho de um grupo de elementos.
+
+EXEMPLO:
+<ul>
+  <li>Gratidão</li>
+  <li>Esperança</li>
+  <li>Fé</li>
+</ul>
+
+ul li:first-child {
+  font-weight: bold;
+
+// Nth-of-type
+Pega o elemento por tipo e posição.
+
+EXEMPLO:
+<ul>
+  <h3>Palavras bonitas</h3>
+  <li>Gratidão</li>
+  <li>Esperança</li>
+  <li>Fé</li>
+</ul>
+
+ul li:nth-of-type(1) {
+  font-weight: bold;
+}
+
