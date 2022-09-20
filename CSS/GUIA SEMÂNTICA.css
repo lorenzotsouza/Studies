@@ -192,3 +192,100 @@ ul li:nth-of-type(1) {
   font-weight: bold;
 }
 
+// Nth-child
+É quando queremos selecionar o primeiro filho de um grupo de elementos.
+
+EXEMPLO:
+<ul>
+	<h3>Palavras bonitas</h3>
+  <li>Gratidão</li>
+  <li>Esperança</li>
+  <li>Fé</li>
+</ul>
+
+ul li:nth-child(2) {
+  font-weight: bold;
+}
+
+// Nth-child(odd) e Nth-child(even)
+Even - números pares
+Odd - números ímpares
+
+EXEMPLO:
+<ul>
+  <li>Gratidão</li>
+  <li>Esperança</li>
+  <li>Fé</li>
+  <li>Liberdade</li>
+</ul>
+
+ul li:nth-child(odd/even) {
+  color: gray;
+}
+
+// Ações do usuário
+Algumas estilos só são aplicados quando o usuário faz alguma ação na página.
+Hover - passar o mouse por cima.
+Focus - clicar em campos de digitação.
+
+EXEMPLO:
+hover
+a:hover {
+  color: red;
+}
+
+focus
+input:focus {
+  border-color: red;
+}
+
+// Disabled e required
+Disabled - desabilita o atributo.
+Required - obriga o uso do atributo.
+
+EXEMPLO:
+disabled
+<input type="text" disabled>
+
+input:disabled {
+  background-color: green;
+}
+
+required
+<input type="text" required>
+
+input:required {
+  background-color: red;
+}
+
+// Pseudo-elements
+Com pseudo-elements nós podemos adicionar elementos HTML pelo próprio CSS.
+
+// pseudo-element-name
+Tanto para o before quanto para o after é preciso adicionar o content,
+mesmo que ele seja vazio (content = "";).
+before - adiciona um pseudo-elemento antes do elemento selecionado.
+after - adiciona um pseudo-elemento depois do elemento selecionado.
+first-line - pega a primeira linha de um texto.
+
+EXEMPLO:
+before
+<ul>
+  <li>Gratidão</li>
+  <li>Esperança</li>
+  <li>Fé</li>
+  <li>Liberdade</li>
+</ul>
+
+li::before {
+  content: "> "
+}
+
+after
+li::after{
+  content: ";"
+}
+
+p::first-line {
+	font-weight: bold;
+}
