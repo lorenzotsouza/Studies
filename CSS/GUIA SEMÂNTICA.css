@@ -289,3 +289,38 @@ li::after{
 p::first-line {
 	font-weight: bold;
 }
+
+// Layout e evolução
+
+// Normal Flow
+É a maneira que o block e o inline são organizados na página.
+
+EXEMPLO
+<p> Texto block com <strong> inline </strong> </p>
+
+// Tabless
+Uso das propriedades float e clear para que os elementos possam mudar de posição na tela.
+float left - fixa na esquerda.
+float right - fixa na direita.
+clear:both - volta ao estado normal.
+
+EXEMPLO:
+<div style="float: left/right OU clear:both"
+  esquerda/direita/normal
+</div>
+
+// Flex container
+Uma classe container com items dentro, os flex items.
+Nesting - é o conceito de um elemento que contém outros elementos.
+Axis - main e cross / star e end.
+Flex sizing - altera o width/height dos itens para preencher os espaços do flex container.
+Flex direction - altera a dimensão (horizontal o vertical), valores: row|row-reverse|column|column-reverse.
+Flex wrap - cria novas linhas.
+Flex flow - shorthand para o direction e wrap juntos.
+Gap - espaço entre os elementos.
+
+// Propriedades dos items
+Flex basis - ajusta a largura.
+Flex grow - o crescimento do item dentro do container em relação aos espaços vazios.
+Flex shrink - o encolhimento do item dentro do container.
+Flex - shorthand para o grow, shrink e basis. (nessa ordem)
