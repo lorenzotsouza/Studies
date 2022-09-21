@@ -1,0 +1,11 @@
+button {
+    display: flex;
+    align-items: center;
+    line-height: 0; (botão que tem texto, é recomendado não usar o line-height)
+    gap: .4rem;
+}
+
+button img {
+    width: 2rem;
+    height: 2rem;
+}
