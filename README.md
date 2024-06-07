@@ -1,1 +1,1 @@
-# Estudos-Studies
+# Studies
